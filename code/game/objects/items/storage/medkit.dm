@@ -556,7 +556,7 @@
 	desc = "Contains patches used to treat brute and burn damage."
 
 /obj/item/storage/pill_bottle/mining/PopulateContents()
-	for(var/i in 1 to 3
+	for(var/i in 1 to 3)
 		new /obj/item/reagent_containers/pill/patch/aiuri(src)
 	for(var/i in 1 to 4)
 		new /obj/item/reagent_containers/pill/patch/libital(src)
