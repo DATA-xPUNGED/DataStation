@@ -44,7 +44,6 @@
 /datum/supply_pack/medical/chemical
 	name = "Chemical Starter Kit Crate"
 	desc = "Contains fourteen different chemicals, for all the fun experiments you can make."
-	access = NONE
 	access_view = NONE
 	cost = CARGO_CRATE_VALUE * 2.6
 	contains = list(/obj/item/reagent_containers/cup/bottle/toxin,
