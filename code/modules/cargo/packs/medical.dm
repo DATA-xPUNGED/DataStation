@@ -43,9 +43,12 @@
 
 /datum/supply_pack/medical/chemical
 	name = "Chemical Starter Kit Crate"
-	desc = "Contains thirteen different chemicals, for all the fun experiments you can make."
+	desc = "Contains fourteen different chemicals, for all the fun experiments you can make."
+	access = NONE
+	access_view = NONE
 	cost = CARGO_CRATE_VALUE * 2.6
-	contains = list(/obj/item/reagent_containers/cup/bottle/hydrogen,
+	contains = list(/obj/item/reagent_containers/cup/bottle/toxin,
+					/obj/item/reagent_containers/cup/bottle/hydrogen,
 					/obj/item/reagent_containers/cup/bottle/carbon,
 					/obj/item/reagent_containers/cup/bottle/nitrogen,
 					/obj/item/reagent_containers/cup/bottle/oxygen,
@@ -82,29 +85,20 @@
 	name = "Medical Supplies Crate"
 	desc = "Contains a random assortment of medical supplies. German doctor not included."
 	cost = CARGO_CRATE_VALUE * 4
-	contains = list(/obj/item/reagent_containers/cup/bottle/multiver,
+	contains = list(/obj/item/reagent_containers/cup/bottle/mannitol,
+					/obj/item/reagent_containers/cup/bottle/multiver,
 					/obj/item/reagent_containers/cup/bottle/epinephrine,
 					/obj/item/reagent_containers/cup/bottle/morphine,
-					/obj/item/reagent_containers/cup/bottle/toxin,
-					/obj/item/reagent_containers/cup/beaker/large,
 					/obj/item/reagent_containers/pill/insulin,
-					/obj/item/stack/medical/gauze,
-					/obj/item/storage/box/beakers,
-					/obj/item/storage/box/medigels,
-					/obj/item/storage/box/syringes,
 					/obj/item/storage/box/bodybags,
 					/obj/item/storage/medkit/regular,
 					/obj/item/storage/medkit/o2,
 					/obj/item/storage/medkit/toxin,
 					/obj/item/storage/medkit/brute,
 					/obj/item/storage/medkit/fire,
-					/obj/item/defibrillator/loaded,
-					/obj/item/reagent_containers/blood/o_minus,
-					/obj/item/storage/pill_bottle/mining,
-					/obj/item/reagent_containers/pill/neurine,
 					/obj/item/stack/medical/bone_gel = 2,
-					/obj/item/vending_refill/medical,
-					/obj/item/vending_refill/drugs,
+					/obj/item/storage/pill_bottle/mining,
+					/obj/item/storage/pill_bottle/neurine,
 				)
 	crate_name = "medical supplies crate"
 
