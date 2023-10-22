@@ -365,6 +365,18 @@ GLOBAL_LIST_INIT(clown_mask_options, list(
 		to_chat(user, span_notice("Your Mime Mask has now morphed into [choice]!"))
 		return TRUE
 
+/obj/item/clothing/mask/gas/doublefaced_mask
+	name = "double-faced mask"
+	desc = "Double the expressions, double the possibilities!"
+	icon_state = "doublefaced_happy"
+	inhand_icon_state = "doublefaced_happy"
+	w_class = WEIGHT_CLASS_SMALL
+	flags_cover = MASKCOVERSEYES
+	resistance_flags = FLAMMABLE
+	has_fov = FALSE
+	greyscale_config = /datum/greyscale_config/doublefaced_happy
+	greyscale_colors = "#777777"
+
 /obj/item/clothing/mask/gas/monkeymask
 	name = "monkey mask"
 	desc = "A mask used when acting as a monkey."
