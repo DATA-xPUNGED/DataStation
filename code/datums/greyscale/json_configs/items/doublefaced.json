@@ -23,5 +23,30 @@
 			"blend_mode": "overlay",
 			"color_ids": [ 3 ]
 		}
+	],
+	"doublefaced_sad":[
+		{
+			"type": "icon_state",
+			"icon_state": "doublefaced_sad_left",
+			"blend_mode": "overlay",
+			"color_ids": [ 1 ]
+		},
+		{
+			"type": "icon_state",
+			"icon_state": "doublefaced_sad_right",
+			"blend_mode": "overlay",
+			"color_ids": [ 2 ]
+		},
+		{
+			"type": "icon_state",
+			"icon_state": "doublefaced_sclera",
+			"blend_mode": "overlay"
+		},
+		{
+			"type": "icon_state",
+			"icon_state": "doublefaced_eyes",
+			"blend_mode": "overlay",
+			"color_ids": [ 3 ]
+		}
 	]
 }

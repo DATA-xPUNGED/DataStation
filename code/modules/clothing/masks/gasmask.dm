@@ -374,7 +374,10 @@ GLOBAL_LIST_INIT(clown_mask_options, list(
 	flags_cover = MASKCOVERSEYES
 	resistance_flags = FLAMMABLE
 	has_fov = FALSE
-	greyscale_config = /datum/greyscale_config/doublefaced_happy
+	greyscale_config = /datum/greyscale_config/doublefaced
+	greyscale_config_worn = /datum/greyscale_config/doublefaced/worn
+    greyscale_config_inhand_left = /datum/greyscale_config/doublefaced/inhands_left
+    greyscale_config_inhand_right = /datum/greyscale_config/doublefaced/inhands_right
 	greyscale_colors = "#777777"
 
 /obj/item/clothing/mask/gas/monkeymask

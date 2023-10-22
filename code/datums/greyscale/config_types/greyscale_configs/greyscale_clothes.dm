@@ -141,15 +141,25 @@
 	icon_file = 'icons/mob/inhands/clothing/masks_righthand.dmi'
 	json_config = 'code/datums/greyscale/json_configs/bandanaskull_inhands.json'
 
-/datum/greyscale_config/doublefaced_happy
-	name = "Happy Double-Faced Mask"
+/datum/greyscale_config/doublefaced
+	name = "Double-Faced Mask"
 	icon_file = 'icons/obj/clothing/masks.dmi'
-	json_config = 'code/datums/greyscale/json_configs/items/doublefaced_happy.json'
+	json_config = 'code/datums/greyscale/json_configs/items/doublefaced.json'
 
-/datum/greyscale_config/doublefaced_happy/worn
-	name = "Happy Double-Faced Mask (Worn)"
+/datum/greyscale_config/doublefaced/worn
+	name = "Double-Faced Mask (Worn)"
 	icon_file = 'icons/mob/clothing/mask.dmi'
-	json_config = 'code/datums/greyscale/json_configs/items/doublefaced_happy.json'
+	json_config = 'code/datums/greyscale/json_configs/items/doublefaced_worn.json'
+
+/datum/greyscale_config/doublefaced/inhands_left
+	name = "Happy Double-Faced Mask (Held, Left)"
+	icon_file = 'icons/mob/inhands/clothing/masks_lefthand.dmi'
+	json_config = 'code/datums/greyscale/json_configs/items/doublefaced_inhands.json'
+
+/datum/greyscale_config/doublefaced/inhands_right
+	name = "Happy Double-Faced Mask (Held, Right)"
+	icon_file = 'icons/mob/inhands/clothing/masks_righthand.dmi'
+	json_config = 'code/datums/greyscale/json_configs/items/doublefaced_inhands.json'
 
 //
 // NECK

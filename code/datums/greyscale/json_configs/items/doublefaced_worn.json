@@ -1,0 +1,52 @@
+{
+	"doublefaced_happy_worn":[
+		{
+			"type": "icon_state",
+			"icon_state": "doublefaced_happy_left",
+			"blend_mode": "overlay",
+			"color_ids": [ 1 ]
+		},
+		{
+			"type": "icon_state",
+			"icon_state": "doublefaced_happy_right",
+			"blend_mode": "overlay",
+			"color_ids": [ 2 ]
+		},
+		{
+			"type": "icon_state",
+			"icon_state": "doublefaced_string",
+			"blend_mode": "overlay"
+		},
+		{
+			"type": "icon_state",
+			"icon_state": "doublefaced_eyes",
+			"blend_mode": "overlay",
+			"color_ids": [ 3 ]
+		}
+	],
+	"doublefaced_sad_worn":[
+		{
+			"type": "icon_state",
+			"icon_state": "doublefaced_sad_left",
+			"blend_mode": "overlay",
+			"color_ids": [ 1 ]
+		},
+		{
+			"type": "icon_state",
+			"icon_state": "doublefaced_sad_right",
+			"blend_mode": "overlay",
+			"color_ids": [ 2 ]
+		},
+		{
+			"type": "icon_state",
+			"icon_state": "doublefaced_string",
+			"blend_mode": "overlay"
+		},
+		{
+			"type": "icon_state",
+			"icon_state": "doublefaced_eyes",
+			"blend_mode": "overlay",
+			"color_ids": [ 3 ]
+		}
+	]
+}
