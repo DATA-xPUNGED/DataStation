@@ -369,7 +369,7 @@ GLOBAL_LIST_INIT(clown_mask_options, list(
 	name = "double-faced mask"
 	desc = "Double the expressions, double the possibilities!"
 	icon_state = "doublefaced_happy"
-	inhand_icon_state = "doublefaced_happy"
+	inhand_icon_state = "doublefaced_happy_worn"
 	w_class = WEIGHT_CLASS_SMALL
 	flags_cover = MASKCOVERSEYES
 	resistance_flags = FLAMMABLE
