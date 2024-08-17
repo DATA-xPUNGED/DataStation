@@ -303,6 +303,21 @@
 						null, span_hear("You hear the rustling of clothes."), DEFAULT_MESSAGE_RANGE, list(helper, src))
 		to_chat(helper, span_notice("You shake [src] trying to pick [p_them()] up!"))
 		to_chat(src, span_notice("[helper] shakes you to get you up!"))
+	//WALLSTATION ORIGINAL: BOOPING
+	else if(check_zone(helper.zone_selected) == BODY_ZONE_PRECISE_MOUTH) //boops, on da nose
+			if(HAS_TRAIT(target, TRAIT_BADTOUCH))
+		if(prob(50))
+			booper.visible_message(span_notice("[target] doesn't let [booper] touch their face!"), span_notice("[target] doesn't let you near their face!"))
+		else
+			booper.visible_message(span_notice("[target] flinches as [booper] touches [p_their(booper)] nose!"), span_notice("[target] flinches as you boop [p_their(booper)] nose!"))
+	else if(istype(get_item_by_slot(ITEM_SLOT_MASK), /obj/item/clothing/mask/gas/clown_hat))
+		playsound(target, 'sound/items/bikehorn.ogg', 50, TRUE)
+		booper.visible_message(span_notice("[booper] honks [target]'s nose"), span_notice("You honk [target]'s nose."))
+	else if(target.bodytype & BODYTYPE_SNOUTED)
+		booper.visible_message(span_notice("[booper] boops [target]'s snout."), span_notice("You boop [target] on the snout."))
+	else
+		booper.visible_message(span_notice("[booper] boops [target]'s nose."), span_notice("You boop [target] on the nose.")
+
 	else if(check_zone(helper.zone_selected) == BODY_ZONE_HEAD && get_bodypart(BODY_ZONE_HEAD)) //Headpats!
 		helper.visible_message(span_notice("[helper] gives [src] a pat on the head to make [p_them()] feel better!"), \
 					null, span_hear("You hear a soft patter."), DEFAULT_MESSAGE_RANGE, list(helper, src))
