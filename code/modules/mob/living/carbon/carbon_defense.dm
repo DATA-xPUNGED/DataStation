@@ -304,20 +304,19 @@
 		to_chat(helper, span_notice("You shake [src] trying to pick [p_them()] up!"))
 		to_chat(src, span_notice("[helper] shakes you to get you up!"))
 	//WALLSTATION ORIGINAL: BOOPING
-	else if(check_zone(helper.zone_selected) == BODY_ZONE_PRECISE_MOUTH) //boops, on da nose
-			if(HAS_TRAIT(src, TRAIT_BADTOUCH))
-		if(prob(50))
-			helper.visible_message(span_notice("[src] doesn't let [helper] touch their face!"), span_notice("[src] doesn't let you near their face!"))
+	else if(check_zone(helper.zone_selected) == BODY_ZONE_PRECISE_MOUTH && get_bodypart(BODY_ZONE_HEAD))
+		if(HAS_TRAIT(src, TRAIT_BADTOUCH))
+			if(prob(50))
+				helper.visible_message(span_notice("[src] doesn't let [helper] touch their face!"), span_notice("[src] doesn't let you near their face!"))
+			else
+				helper.visible_message(span_notice("[src] flinches as [helper] touches [p_their(helper)] nose!"), span_notice("[src] flinches as you boop [p_their(helper)] nose!"))
+		else if(istype(get_item_by_slot(ITEM_SLOT_MASK), /obj/item/clothing/mask/gas/clown_hat))
+			playsound(src, 'sound/items/bikehorn.ogg', 50, TRUE)
+			helper.visible_message(span_notice("[helper] honks [src]'s nose"), span_notice("You honk [src]'s nose."))
+		else if(src.bodytype & BODYSHAPE_SNOUTED)
+			helper.visible_message(span_notice("[helper] boops [src]'s snout."), span_notice("You boop [src] on the snout."))
 		else
-			helper.visible_message(span_notice("[src] flinches as [helper] touches [p_their(helper)] nose!"), span_notice("[src] flinches as you boop [p_their(helper)] nose!"))
-	else if(istype(get_item_by_slot(ITEM_SLOT_MASK), /obj/item/clothing/mask/gas/clown_hat))
-		playsound(src, 'sound/items/bikehorn.ogg', 50, TRUE)
-		helper.visible_message(span_notice("[helper] honks [src]'s nose"), span_notice("You honk [src]'s nose."))
-	else if(src.bodytype & BODYTYPE_SNOUTED)
-		helper.visible_message(span_notice("[helper] boops [src]'s snout."), span_notice("You boop [src] on the snout."))
-	else
-		helper.visible_message(span_notice("[helper] boops [src]'s nose."), span_notice("You boop [src] on the nose.")
-
+			helper.visible_message(span_notice("[helper] boops [src]'s nose."), span_notice("You boop [src] on the nose."))
 	else if(check_zone(helper.zone_selected) == BODY_ZONE_HEAD && get_bodypart(BODY_ZONE_HEAD)) //Headpats!
 		helper.visible_message(span_notice("[helper] gives [src] a pat on the head to make [p_them()] feel better!"), \
 					null, span_hear("You hear a soft patter."), DEFAULT_MESSAGE_RANGE, list(helper, src))
