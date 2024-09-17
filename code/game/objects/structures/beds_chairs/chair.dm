@@ -218,6 +218,13 @@
 		overlays_from_child_procs = list(image('icons/obj/chairs.dmi', loc, "echair_over", pixel_x = -1))
 	. = ..()
 
+/obj/structure/chair/comfy/shuttle/arrival
+
+/obj/structure/chair/comfy/shuttle/arrival/Initialize(mapload)
+	AddElement(connect_loc)
+	. = ..()
+	
+
 /obj/structure/chair/comfy/shuttle/tactical
 	name = "tactical chair"
 
