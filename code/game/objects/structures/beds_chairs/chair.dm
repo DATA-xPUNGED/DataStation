@@ -25,9 +25,11 @@
 		name = "tactical [name]"
 		fishing_modifier -= 4
 	MakeRotate()
-	if(can_buckle && fishing_modifier)
-		AddComponent(/datum/component/adjust_fishing_difficulty, fishing_modifier)
-
+	if(can_buckle)
+		if(fishing_modifier)
+			AddComponent(/datum/component/adjust_fishing_difficulty, fishing_modifier)
+		if(istype)
+			AddComponent(/datum/component/unbuckle_on_arrival)
 /obj/structure/chair/examine(mob/user)
 	. = ..()
 	. += span_notice("It's held together by a couple of <b>bolts</b>.")
@@ -223,13 +225,6 @@
 	if(!overlays_from_child_procs)
 		overlays_from_child_procs = list(image('icons/obj/chairs.dmi', loc, "echair_over", pixel_x = -1))
 	. = ..()
-
-/obj/structure/chair/comfy/shuttle/arrival
-
-/obj/structure/chair/comfy/shuttle/arrival/Initialize(mapload)
-	AddElement(connect_loc)
-	. = ..()
-	
 
 /obj/structure/chair/comfy/shuttle/tactical
 	name = "tactical chair"

@@ -106,3 +106,6 @@
 
 /// Global signal sent when a mob is spawned from a ghost in a dynamic ruleset (mob/spawned_mob)
 #define COMSIG_RULESET_BODY_GENERATED_FROM_GHOSTS "!ruleset_body_generated_from_ghosts"
+
+/// Global signal sent when a new player gets on the station via the arrival shuttle
+#define COMSIG_NEW_PLAYER_ARRIVED_ON_STATION "!new_player_arrived_on_station"

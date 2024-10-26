@@ -220,6 +220,7 @@
 			SSshuttle.arrivals.QueueAnnounce(humanc, rank)
 		else
 			announce_arrival(humanc, rank)
+			SEND_SIGNAL(src, COMSIG_NEW_PLAYER_ARRIVED_ON_STATION)
 		AddEmploymentContract(humanc)
 
 		humanc.increment_scar_slot()
