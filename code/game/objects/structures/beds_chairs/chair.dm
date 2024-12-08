@@ -28,7 +28,7 @@
 	if(can_buckle)
 		if(fishing_modifier)
 			AddComponent(/datum/component/adjust_fishing_difficulty, fishing_modifier)
-		if(istype)
+		if(istype(get_area(src), /area/shuttle/arrival))
 			AddComponent(/datum/component/unbuckle_on_arrival)
 /obj/structure/chair/examine(mob/user)
 	. = ..()
