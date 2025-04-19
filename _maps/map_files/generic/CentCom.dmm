@@ -2815,7 +2815,7 @@
 	id = "XCCsecdepartment";
 	name = "CC Security Checkpoint Control";
 	pixel_x = 24;
-	pixel_y = 24
+	pixel_y = 20
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
@@ -5218,6 +5218,22 @@
 /obj/effect/turf_decal/tile/dark_blue/fourcorners,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/evacuation)
+"xu" = (
+/obj/structure/chair{
+	dir = 8
+	},
+/obj/machinery/light/directional/east,
+/obj/effect/turf_decal/tile/green/half/contrasted{
+	dir = 4
+	},
+/obj/machinery/button/door/indestructible{
+	id = "XCCsecdepartment";
+	name = "CC Security Access Control";
+	pixel_x = 24;
+	req_access = list("cent_general")
+	},
+/turf/open/floor/iron,
+/area/centcom/central_command_areas/fore)
 "xv" = (
 /obj/machinery/door/poddoor{
 	id = "thunderdome";
@@ -6161,11 +6177,11 @@
 /turf/open/floor/iron/dark,
 /area/centcom/tdome/observation)
 "BE" = (
-/obj/machinery/door/poddoor/shutters{
-	id = "XCCsec3";
-	name = "CC Main Access Shutters"
-	},
 /obj/effect/turf_decal/delivery,
+/obj/machinery/door/poddoor/shutters{
+	id = "XCCtdome";
+	name = "CC Thunderdome Shutters"
+	},
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/control)
 "BF" = (
@@ -7352,20 +7368,20 @@
 	pixel_y = 24
 	},
 /obj/machinery/button/door/indestructible{
-	id = "XCCsec3";
-	name = "CC Main Access Control";
+	id = 'XCCtdome';
+	name = "CC Thunderdome Access Control";
 	pixel_x = 8;
 	pixel_y = 24
 	},
 /obj/machinery/button/door/indestructible{
-	id = "XCCsec1";
-	name = "CC Shutter 1 Control";
+	id = "XCCcustoms2";
+	name = "CC Customs Access Control";
 	pixel_x = 8;
 	pixel_y = 38
 	},
 /obj/machinery/button/door/indestructible{
 	id = "XCCsec3";
-	name = "XCC Shutter 3 Control";
+	name = "CC Security Access Control";
 	pixel_x = -8;
 	pixel_y = 38
 	},
@@ -8945,8 +8961,8 @@
 "Qk" = (
 /obj/structure/table/reinforced,
 /obj/machinery/button/door/indestructible{
-	id = "XCCsec3";
-	name = "CC Main Access Control"
+	id = "XCCtdome";
+	name = "CC Thunderdome Access Control"
 	},
 /obj/machinery/airalarm/directional/south,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -55081,7 +55097,7 @@ nX
 PD
 nX
 nL
-nr
+xu
 qu
 Vx
 rJ
