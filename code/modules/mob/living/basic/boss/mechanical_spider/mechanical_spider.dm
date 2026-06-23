@@ -19,7 +19,7 @@
 
 	mob_biotypes = MOB_ROBOTIC|MOB_SPECIAL
 	move_force = MOVE_FORCE_DEFAULT
-	move_resist = MOVE_FORCE_VERY_STRONG
+	move_resist = MOVE_FORCE_DEFAULT
 	pull_force = MOVE_FORCE_VERY_STRONG
 
 	sharpness = SHARP_EDGED
